@@ -64,3 +64,7 @@ import 'zone.js/dist/zone';  // Included with Angular CLI.
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
+
+
+ // solution found on https://github.com/socketio/socket.io-client/issues/1206
+(window as any).global = window;
