@@ -14,6 +14,7 @@ export class ChatPage implements OnInit {
   message = '';
 
   constructor(private socket: Socket) { 
+    
     this.name = 'dummy';
 
     this.getMessages().subscribe(message => {

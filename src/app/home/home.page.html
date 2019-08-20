@@ -17,7 +17,7 @@
     <ion-grid class="page">
         <ion-row class="ion-justify-content-between">
           <ion-col>
-              <ion-item>
+              <ion-item lines="none">
                   <ion-label stacked> Nom </ion-label>
                   <ion-input type="text" [(ngModel)]="name" placeholder="Nom"></ion-input>
               </ion-item>
@@ -25,7 +25,7 @@
         </ion-row>
         <ion-row class="ion-justify-content-between">
             <ion-col>
-                <ion-item>
+                <ion-item lines="none">
                     <ion-label stacked> Missatge </ion-label>
                     <ion-input type="text" [(ngModel)]="message" placeholder="Missatge"></ion-input>
                 </ion-item>
@@ -36,20 +36,20 @@
                   <ion-button expand="full"
                               color="warning"
                               (click)="joinChat()"
-                              [disabled]="name === ''"> [Test]Unir-se com "{{ name }}" 
+                              [disabled]="name === ''"> [test] Unir-se com "{{ name }}" 
                   </ion-button>  
               </ion-col>
               <ion-col>
                   <ion-button expand="full"
                               color="warning"
                               (click)="sendMessage()"
-                              [disabled]="message === ''"> [Test]Enviar missatge 
+                              [disabled]="name === '' && message === ''"> [test] Enviar missatge 
                   </ion-button>  
               </ion-col>
               <ion-col>
                   <ion-button expand="full" 
                               routerLink="/chat"
-                              routerDirection="root"> Chat
+                              routerDirection="root"> Xat
                   </ion-button>
               </ion-col>
             </ion-row>

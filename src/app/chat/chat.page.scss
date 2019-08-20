@@ -28,6 +28,10 @@ ion-grid {
 }
 
 .page-chat {
+
+    .item-input::after {
+        border-bottom-color: transparent !important;
+    }
     
     .user_name {
         color: #44475a;
