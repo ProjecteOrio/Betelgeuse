@@ -15,7 +15,6 @@ export class HomePage {
   joinChat() {
     this.socket.connect();
     this.socket.emit('user-connect', this.name);
-    console.log(this.socket);
   }
 
   sendMessage() {

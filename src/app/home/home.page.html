@@ -19,7 +19,7 @@
           <ion-col>
               <ion-item>
                   <ion-label stacked> Nom </ion-label>
-                  <ion-input type="text" [(ngModel)]="name" placeholder="Name"></ion-input>
+                  <ion-input type="text" [(ngModel)]="name" placeholder="Nom"></ion-input>
               </ion-item>
           </ion-col>
         </ion-row>
@@ -27,23 +27,23 @@
             <ion-col>
                 <ion-item>
                     <ion-label stacked> Missatge </ion-label>
-                    <ion-input type="text" [(ngModel)]="message" placeholder="Message"></ion-input>
+                    <ion-input type="text" [(ngModel)]="message" placeholder="Missatge"></ion-input>
                 </ion-item>
             </ion-col>
           </ion-row>
           <ion-row class="ion-justify-content-between">
               <ion-col>
                   <ion-button expand="full"
-                              color="secondary"
+                              color="warning"
                               (click)="joinChat()"
-                              [disabled]="name === ''"> Unir-se com "{{ name }}" 
+                              [disabled]="name === ''"> [Test]Unir-se com "{{ name }}" 
                   </ion-button>  
               </ion-col>
               <ion-col>
                   <ion-button expand="full"
-                              color="secondary"
+                              color="warning"
                               (click)="sendMessage()"
-                              [disabled]="message === ''"> Enviar missatge 
+                              [disabled]="message === ''"> [Test]Enviar missatge 
                   </ion-button>  
               </ion-col>
               <ion-col>
